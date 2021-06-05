@@ -12,6 +12,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var auth:FirebaseAuth
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("").requestEmail().build()
+            .requestIdToken("AIzaSyDfklgGP9B6w4AKSP8c52IdG0PknBl8wEg").requestEmail().build()
 
         googlesSignInClient = GoogleSignIn.getClient(this,gso)
 
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     private fun signIn(){
         val signInIntent = googlesSignInClient.signInIntent
         startActivityForResult(signInIntent,RC_SIGN_IN)
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -62,7 +64,9 @@ class MainActivity : AppCompatActivity() {
                 if (task.isSuccessful){
                     Log.d(TAG,"signInWithCredentials:Success")
                 }
-                else {}
+                else {
+                    Log.w(TAG,"SignIInWithCredentials:Failure",task.exception)
+                }
             }
     }
 }
