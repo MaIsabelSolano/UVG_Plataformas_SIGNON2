@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "935082603154",
+    "project_id": "singon2",
+    "storage_bucket": "singon2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935082603154:android:629d24c8d976079449ec4b",
+        "android_client_info": {
+          "package_name": "com.uvg.signon2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935082603154-u6t35oib38e9gp5clrc7h48im5m0p77h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uvg.signon2",
+            "certificate_hash": "d6e910b7b9d8cf96bd35f0d3d1a4fd3f7708f3a8"
+          }
+        },
+        {
+          "client_id": "935082603154-85u5rucacbotjavkvo2a5mihkplfpcqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQa_Nfc3PqhbS0gquE7r0Cvp_831N_Ojg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935082603154-85u5rucacbotjavkvo2a5mihkplfpcqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
